@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-24T07:41:14.745Z",
+  "passed": true,
+  "runtime": "render",
+  "health": {
+    "ok": true,
+    "app": "RecallSloth",
+    "version": "1.0.0",
+    "storage": "browser-only",
+    "render": true,
+    "commit": "71aca39371c52ee87e100ab91acdc99ad6787703",
+    "noteTextAccepted": false
+  },
+  "payloadKeys": ["version", "now", "budgetSeconds", "cards"],
+  "cardMetadataKeys": [
+    "id",
+    "topicId",
+    "groupId",
+    "dueAt",
+    "seconds",
+    "lapses"
+  ],
+  "noteTextSent": false,
+  "rawTextRejected": true,
+  "queueMatchesLocalPlanner": true,
+  "selectedSteps": 2,
+  "estimatedSeconds": 90,
+  "trace": [
+    {
+      "tool": "filter_due",
+      "count": 12
+    },
+    {
+      "tool": "respect_learner_groups",
+      "count": 8
+    },
+    {
+      "tool": "balance_topics_within_budget",
+      "count": 2
+    }
+  ]
+}

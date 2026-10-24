@@ -1,0 +1,23 @@
+{
+  "url": "https://recallsloth.onrender.com",
+  "provider": "Render",
+  "serviceId": "srv-dbe5vmafngtc73f53dig",
+  "deployId": "dep-dbe5vn2fngtc73f53f80",
+  "status": "live",
+  "plan": "free",
+  "region": "singapore",
+  "deployedCommit": "71aca39371c52ee87e100ab91acdc99ad6787703",
+  "liveAt": "2026-10-24T07:36:54.280867Z",
+  "autoDeploy": false,
+  "database": false,
+  "secretsRequired": false,
+  "category": "Best Use of Render",
+  "softwareChecks": {
+    "unitAndApi": 26,
+    "browser": 21,
+    "githubActions": {
+      "url": "https://github.com/faraz-shamim/recallsloth/actions/runs/40074739937",
+      "conclusion": "success"
+    }
+  }
+}

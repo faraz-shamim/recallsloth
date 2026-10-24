@@ -1,0 +1,217 @@
+{
+  "startedAt": "2026-10-24T07:38:29.167Z",
+  "environment": "Public Render deployment, fresh isolated Chromium profile",
+  "url": "https://recallsloth.onrender.com",
+  "syntheticActions": true,
+  "clinicalValidation": false,
+  "checks": [
+    {
+      "name": "The production desk and service-worker shell load without exceptions",
+      "passed": true
+    },
+    {
+      "name": "Sample notes create twelve exact-source draft cards",
+      "passed": true
+    },
+    {
+      "name": "Explicit learner source approval is required before cards enter queues",
+      "passed": true
+    },
+    {
+      "name": "A source citation opens the exact highlighted definition and note checksum",
+      "passed": true
+    },
+    {
+      "name": "Real local MiniLM inference proposes comparisons with zero automatic groups",
+      "passed": true
+    },
+    {
+      "name": "Eight actual sample alias lookups record semantic and lexical predictions",
+      "passed": true,
+      "detail": {
+        "semantic": 5,
+        "lexical": 4
+      }
+    },
+    {
+      "name": "Four explicit learner confirmations produce eight concepts while retaining all twelve sources",
+      "passed": true
+    },
+    {
+      "name": "Untrusted note markup is rendered as text and never executes",
+      "passed": true
+    },
+    {
+      "name": "The bounded queue uses anonymous metadata, topic balancing and the two-minute budget",
+      "passed": true
+    },
+    {
+      "name": "Keyboard reveal/rating and undo restore the previous source card and schedule",
+      "passed": true
+    },
+    {
+      "name": "A browser reload resumes the unfinished session and preserves its ratings",
+      "passed": true
+    },
+    {
+      "name": "Finishing a session schedules the cards and adds no surprise extra questions",
+      "passed": true
+    },
+    {
+      "name": "Deck export preserves exact sources, learner groups and due dates",
+      "passed": true
+    },
+    {
+      "name": "A tampered backup fails integrity checks without replacing the deck",
+      "passed": true
+    },
+    {
+      "name": "A valid backup restores the deck after an explicit replacement confirmation",
+      "passed": true
+    },
+    {
+      "name": "Ungrouping is reversible and never removes source cards",
+      "passed": true
+    },
+    {
+      "name": "Unsupported document formats are rejected while existing notes stay intact",
+      "passed": true
+    },
+    {
+      "name": "All four views fit a 390-pixel phone viewport",
+      "passed": true
+    },
+    {
+      "name": "Cached local model, stored notes and queue planner work after an offline reload",
+      "passed": true
+    },
+    {
+      "name": "Clearing the desk removes notes, cards and history from persistent browser storage",
+      "passed": true
+    },
+    {
+      "name": "The private marker never leaves in requests and model assets use the pinned revision",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "health": {
+    "ok": true,
+    "app": "RecallSloth",
+    "version": "1.0.0",
+    "storage": "browser-only",
+    "render": true,
+    "commit": "71aca39371c52ee87e100ab91acdc99ad6787703",
+    "noteTextAccepted": false
+  },
+  "diagnostic": {
+    "format": "recallsloth-sample-diagnostic-v1",
+    "createdAt": "2026-10-24T07:38:57.932Z",
+    "model": {
+      "id": "Xenova/all-MiniLM-L6-v2",
+      "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+      "dtype": "q8",
+      "device": "wasm",
+      "dimensions": 384,
+      "license": "Apache-2.0"
+    },
+    "device": "wasm CPU",
+    "sourceSha256": "2f45430f879901485b2394bb86728eb1d8a6a97adc2ad6d084105d68c4cfbd96",
+    "cases": 8,
+    "semanticCorrect": 5,
+    "contrastAwareCorrect": 6,
+    "lexicalCorrect": 4,
+    "contrastRule": "Unflagged comparisons first; gas-term, negation and numeric-token differences flagged. Added after observing errors in related development examples. This sample was revised during development and is not an independent evaluation.",
+    "baseline": "Jaccard overlap of lowercased words with a fixed small stop list",
+    "modelDurationMs": 170,
+    "independentHoldout": false,
+    "clinicalValidation": false,
+    "results": [
+      {
+        "query": "Ventilation",
+        "expected": "Breathing",
+        "semanticFirst": "Breathing",
+        "lexicalFirst": "Breathing",
+        "contrastAwareFirst": "Breathing",
+        "semanticTargetRank": 1,
+        "semanticTopScore": 0.7775785564416063
+      },
+      {
+        "query": "Breathing",
+        "expected": "Ventilation",
+        "semanticFirst": "Ventilation",
+        "lexicalFirst": "Ventilation",
+        "contrastAwareFirst": "Ventilation",
+        "semanticTargetRank": 1,
+        "semanticTopScore": 0.7775785564416063
+      },
+      {
+        "query": "Perfusion",
+        "expected": "Pulmonary blood flow",
+        "semanticFirst": "Pulmonary blood flow",
+        "lexicalFirst": "Pulmonary blood flow",
+        "contrastAwareFirst": "Pulmonary blood flow",
+        "semanticTargetRank": 1,
+        "semanticTopScore": 0.7903211597377912
+      },
+      {
+        "query": "Pulmonary blood flow",
+        "expected": "Perfusion",
+        "semanticFirst": "Alveoli",
+        "lexicalFirst": "Alveoli",
+        "contrastAwareFirst": "Alveoli",
+        "semanticTargetRank": 2,
+        "semanticTopScore": 0.8348734874208449
+      },
+      {
+        "query": "Oxygen transfer",
+        "expected": "O2 uptake",
+        "semanticFirst": "Carbon dioxide transfer",
+        "lexicalFirst": "Carbon dioxide transfer",
+        "contrastAwareFirst": "O2 uptake",
+        "semanticTargetRank": 2,
+        "semanticTopScore": 0.7524243330680953
+      },
+      {
+        "query": "O2 uptake",
+        "expected": "Oxygen transfer",
+        "semanticFirst": "Pulmonary blood flow",
+        "lexicalFirst": "CO2 removal",
+        "contrastAwareFirst": "Pulmonary blood flow",
+        "semanticTargetRank": 4,
+        "semanticTopScore": 0.7816730209650969
+      },
+      {
+        "query": "Carbon dioxide transfer",
+        "expected": "CO2 removal",
+        "semanticFirst": "CO2 removal",
+        "lexicalFirst": "CO2 removal",
+        "contrastAwareFirst": "CO2 removal",
+        "semanticTargetRank": 1,
+        "semanticTopScore": 0.819775754198627
+      },
+      {
+        "query": "CO2 removal",
+        "expected": "Carbon dioxide transfer",
+        "semanticFirst": "Carbon dioxide transfer",
+        "lexicalFirst": "O2 uptake",
+        "contrastAwareFirst": "Carbon dioxide transfer",
+        "semanticTargetRank": 1,
+        "semanticTopScore": 0.819775754198627
+      }
+    ]
+  },
+  "networkPrivacy": {
+    "syntheticPrivateMarkerLeaked": false,
+    "modelRequestsPinned": true,
+    "queuePayloads": [
+      {
+        "keys": ["version", "now", "budgetSeconds", "cards"],
+        "cards": 13,
+        "bytes": 1831
+      }
+    ]
+  },
+  "passed": true,
+  "finishedAt": "2026-10-24T07:39:30.015Z"
+}

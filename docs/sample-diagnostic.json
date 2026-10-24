@@ -1,6 +1,6 @@
 {
   "format": "recallsloth-sample-diagnostic-v1",
-  "createdAt": "2026-10-24T07:32:22.296Z",
+  "createdAt": "2026-10-24T07:38:57.932Z",
   "model": {
     "id": "Xenova/all-MiniLM-L6-v2",
     "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
@@ -15,9 +15,9 @@
   "semanticCorrect": 5,
   "contrastAwareCorrect": 6,
   "lexicalCorrect": 4,
-  "contrastRule": "Unflagged comparisons first; gas-term, negation and numeric-token differences flagged. Added after observing errors in this same sample.",
+  "contrastRule": "Unflagged comparisons first; gas-term, negation and numeric-token differences flagged. Added after observing errors in related development examples. This sample was revised during development and is not an independent evaluation.",
   "baseline": "Jaccard overlap of lowercased words with a fixed small stop list",
-  "modelDurationMs": 168,
+  "modelDurationMs": 170,
   "independentHoldout": false,
   "clinicalValidation": false,
   "results": [

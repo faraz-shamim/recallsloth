@@ -12,7 +12,7 @@ This is an educational prototype for personal revision. Use trusted course notes
 
 ## Try it
 
-The verified public app and submission will be recorded in `docs/deployment.json` and `docs/publication.json`.
+[Open the live app](https://recallsloth.onrender.com/) · [Verified Render deployment](docs/deployment.json) · [Independent Linux CI run](https://github.com/faraz-shamim/recallsloth/actions/runs/40074739937)
 
 1. **Try the sample notes.** Twelve short physiology cards are extracted from original study definitions based on [NIH/NHLBI factual references](https://www.nhlbi.nih.gov/health/lungs/breathing-benefits).
 2. **Review & approve cards.** Every answer links to the original note, exact character range, line and SHA-256 text checksum.
