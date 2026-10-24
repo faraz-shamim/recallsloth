@@ -1,0 +1,97 @@
+{
+  "format": "recallsloth-sample-diagnostic-v1",
+  "createdAt": "2026-10-24T07:32:22.296Z",
+  "model": {
+    "id": "Xenova/all-MiniLM-L6-v2",
+    "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+    "dtype": "q8",
+    "device": "wasm",
+    "dimensions": 384,
+    "license": "Apache-2.0"
+  },
+  "device": "wasm CPU",
+  "sourceSha256": "2f45430f879901485b2394bb86728eb1d8a6a97adc2ad6d084105d68c4cfbd96",
+  "cases": 8,
+  "semanticCorrect": 5,
+  "contrastAwareCorrect": 6,
+  "lexicalCorrect": 4,
+  "contrastRule": "Unflagged comparisons first; gas-term, negation and numeric-token differences flagged. Added after observing errors in this same sample.",
+  "baseline": "Jaccard overlap of lowercased words with a fixed small stop list",
+  "modelDurationMs": 168,
+  "independentHoldout": false,
+  "clinicalValidation": false,
+  "results": [
+    {
+      "query": "Ventilation",
+      "expected": "Breathing",
+      "semanticFirst": "Breathing",
+      "lexicalFirst": "Breathing",
+      "contrastAwareFirst": "Breathing",
+      "semanticTargetRank": 1,
+      "semanticTopScore": 0.7775785564416063
+    },
+    {
+      "query": "Breathing",
+      "expected": "Ventilation",
+      "semanticFirst": "Ventilation",
+      "lexicalFirst": "Ventilation",
+      "contrastAwareFirst": "Ventilation",
+      "semanticTargetRank": 1,
+      "semanticTopScore": 0.7775785564416063
+    },
+    {
+      "query": "Perfusion",
+      "expected": "Pulmonary blood flow",
+      "semanticFirst": "Pulmonary blood flow",
+      "lexicalFirst": "Pulmonary blood flow",
+      "contrastAwareFirst": "Pulmonary blood flow",
+      "semanticTargetRank": 1,
+      "semanticTopScore": 0.7903211597377912
+    },
+    {
+      "query": "Pulmonary blood flow",
+      "expected": "Perfusion",
+      "semanticFirst": "Alveoli",
+      "lexicalFirst": "Alveoli",
+      "contrastAwareFirst": "Alveoli",
+      "semanticTargetRank": 2,
+      "semanticTopScore": 0.8348734874208449
+    },
+    {
+      "query": "Oxygen transfer",
+      "expected": "O2 uptake",
+      "semanticFirst": "Carbon dioxide transfer",
+      "lexicalFirst": "Carbon dioxide transfer",
+      "contrastAwareFirst": "O2 uptake",
+      "semanticTargetRank": 2,
+      "semanticTopScore": 0.7524243330680953
+    },
+    {
+      "query": "O2 uptake",
+      "expected": "Oxygen transfer",
+      "semanticFirst": "Pulmonary blood flow",
+      "lexicalFirst": "CO2 removal",
+      "contrastAwareFirst": "Pulmonary blood flow",
+      "semanticTargetRank": 4,
+      "semanticTopScore": 0.7816730209650969
+    },
+    {
+      "query": "Carbon dioxide transfer",
+      "expected": "CO2 removal",
+      "semanticFirst": "CO2 removal",
+      "lexicalFirst": "CO2 removal",
+      "contrastAwareFirst": "CO2 removal",
+      "semanticTargetRank": 1,
+      "semanticTopScore": 0.819775754198627
+    },
+    {
+      "query": "CO2 removal",
+      "expected": "Carbon dioxide transfer",
+      "semanticFirst": "Carbon dioxide transfer",
+      "lexicalFirst": "O2 uptake",
+      "contrastAwareFirst": "Carbon dioxide transfer",
+      "semanticTargetRank": 1,
+      "semanticTopScore": 0.819775754198627
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "RecallSloth",
+  "short_name": "RecallSloth",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ef",
+  "theme_color": "#493446",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

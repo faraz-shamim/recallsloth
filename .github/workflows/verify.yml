@@ -1,0 +1,32 @@
+name: Verify RecallSloth
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 24.18.0
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - uses: actions/upload-artifact@v7.0.2
+        if: always()
+        with:
+          name: synthetic-study-checks
+          path: |
+            docs/browser-qa.json
+            docs/sample-diagnostic.json
+            test-results/
+          retention-days: 7

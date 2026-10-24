@@ -1,0 +1,25 @@
+{
+  "name": "recallsloth",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node scripts/prepare-assets.mjs && node server/index.js",
+    "build": "node scripts/prepare-assets.mjs && vite build && node scripts/compress-assets.mjs",
+    "start": "node server/index.js --production",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "node scripts/browser-qa.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.1",
+    "express": "5.3.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.4",
+    "playwright": "1.64.1"
+  }
+}
