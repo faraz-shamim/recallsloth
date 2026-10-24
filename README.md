@@ -12,7 +12,7 @@ This is an educational prototype for personal revision. Use trusted course notes
 
 ## Try it
 
-[Open the live app](https://recallsloth.onrender.com/) · [Verified Render deployment](docs/deployment.json) · [Independent Linux CI run](https://github.com/faraz-shamim/recallsloth/actions/runs/40074739937)
+[Open the live app](https://recallsloth.onrender.com/) · [Published DEV submission](https://dev.to/faraz_s_0a6e70a4bbdc6622/recallsloth-your-medical-revision-queue-can-do-the-sorting-3lea) · [Verified Render deployment](docs/deployment.json) · [Independent Linux CI run](https://github.com/faraz-shamim/recallsloth/actions/runs/40074739937)
 
 1. **Try the sample notes.** Twelve short physiology cards are extracted from original study definitions based on [NIH/NHLBI factual references](https://www.nhlbi.nih.gov/health/lungs/breathing-benefits).
 2. **Review & approve cards.** Every answer links to the original note, exact character range, line and SHA-256 text checksum.
@@ -130,3 +130,4 @@ The generic pinned MiniLM browser loader, WASM compression and service-worker pa
 MIT application code. Model and runtime licenses remain separate and are distributed with the self-hosted assets. Source-note sample credit: National Heart, Lung, and Blood Institute; National Institutes of Health; U.S. Department of Health and Human Services. The definitions are newly written factual study examples; no agency endorsement is implied. See THIRD_PARTY.md for the government references and reuse policy.
 
 No post-deadline changes have been made. Any later code changes after the Week 3 deadline must be identified here.
+

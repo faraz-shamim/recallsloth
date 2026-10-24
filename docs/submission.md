@@ -1,6 +1,6 @@
 ---
 title: "RecallSloth: Your Medical Revision Queue Can Do the Sorting"
-published: false
+published: true
 tags: devchallenge, hf26challenge, ai, education
 cover_image: https://raw.githubusercontent.com/faraz-shamim/recallsloth/main/web/public/art/recallsloth-cover.webp
 description: "Source-linked medical recall cards, local AI overlap scouting, and a small Render-powered study queue."
